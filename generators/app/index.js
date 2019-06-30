@@ -1,6 +1,4 @@
 const Generator = require('yeoman-generator');
-const {rainbow} = require('../lib/rainbow');
-const {joke} = require('../lib/joke');
 
 module.exports = class extends Generator {
   constructor(args, opts) {
@@ -38,9 +36,5 @@ module.exports = class extends Generator {
         await this._private_listing();
         break;
     }
-  }
-
-  async end() {
-
   }
 };
